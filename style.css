@@ -1,132 +1,131 @@
-/* GENERAL PAGE SETUP */
+/* ---------------------- NORMALIZE BASE STYLES ---------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  margin: 0; /* Set default margin space */
-  font-family: 'Helvetica Neue'; /* Set all text fonts */
-  background-color: #FCFCFC; 
-  font-size: 16px;  /* default paragraph size */
-  color: #333; /* Set default text color */
-  display: flex; /* Enables choosable composition of header, main, and footer */
-  flex-direction: column; /* Stack header, main, and footer vertically from top to bottom */
-  min-height: 100vh; /* Makes page take up full height and width of browser screen*/
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #FCFCFC;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
+/* Global text spacing */
+h1, h2, h3 {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
 
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
 
-/* TOP NAVIGATION BAR */
+/* ---------------------- TOP NAVIGATION BAR ---------------------- */
 .top-nav {
-  display: flex; /* Logo on the left and contact button on the right) */
-  justify-content: space-between; /* Maximum space between Amelia Suchanek and Conact */
-  align-items: center; /* Vertically center Amelia Suchanek and Contact button */
-  padding: 20px 40px; /* Set margin space inside top navigation bar: 20px for top/bottom and 40px for left/right */
-  border-bottom: 1px solid #ccc; /* Thin line to separate Navigation bar */
-  background-color: white; /* Set background color for Navigation Bar */
-  position: fixed; /* Keeps top navigation bar there even when scrolling */
-  top: 0; /* Sets the bar at the top of the browser */
-  width: 100%; /* Bar reaches the full width of the browser */
-  box-sizing: border-box; /* Margins and padding is included in the width of the igation bar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ccc;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
 }
 
-
-/* MY SMALL PROFILE PICTURE AND "AMELIA SUCHANEK" */
 .logo-section {
-  display: flex; /* Positions profile image and name in a row */
-  align-items: center; /* Vertically centers my profile picture and Amelia Suchanek */
-  gap: 10px; /* Set the space between my profile picture and Amelia Suchanek */
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .profile-pic {
-  width: 40px; /* Set the width of profile picture */
-  height: 40px; /* Set the height of the profile */
-  border-radius: 50%; /* Makes my profile picture circular instead of square */
-  object-fit: cover; /* Resizes and crops my profile picture so it fits in the circle */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-/* TOP LEFT "AMELIA SUCHANEK" */
 .logo {
-  text-decoration: none; /* Removes link underline */
-  font-weight: 400; /* Set text boldness */
-  font-size: 1.2rem; /* Set text size */
-  color: #333; /* Set text color */
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  color: #333;
 }
 
-
-
-/* RECTANGLE CONTACT BUTTON */
+/* Contact Button */
 .contact-button {
-  border: 1px solid #333; /* Adds a border around contact */
-  padding: 7px 14px; /* Adds margin inside the boarder: 7px for the top/bottom and 14px for the left/right */
-  border-radius: 0px; /* Sets corners sharp instead of curved */
-  text-decoration: none; /* Romoves link underline */
-  color: #333; /* Sets font color */
-  transition: all 0.5s ease; /* Button darkens when cursor hovers over it */
+  border: 1px solid #333;
+  padding: 7px 14px;
+  border-radius: 0;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.5s ease;
 }
 
 .contact-button:hover {
-  background-color: #192E4A; /* Fill color changes when cursor is hovered */
-  color: white; /* Text folor changes to white for contrast when cursor is hovered */
+  background-color: #192E4A;
+  color: white;
 }
 
-
-
-/* MAIN CONTENT */
+/* ---------------------- MAIN CONTENT ---------------------- */
 main {
-  flex: 1; /* Main section takes up space from top navigation to bottom navigation */
-  padding-top: 100px; /* Margin at the top so navigation bar doesn't cover main content */
-  padding-left: .5in; /* Margin on the left edge so text isn't touching the browser wall */
-  padding-bottom: 80px; /* Margin at the bottom so navigation bar doesn't cover main content */
-  text-align: left; /* Align text to the left */
+  flex: 1;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 100px;
+  text-align: left;
 }
 
-/* THE HOME PAGE HEADING */
+/* Home Heading */
 .home h1 {
-  font-size: 20px;      /* Makes it smaller than the default h1 */
-  font-weight: 500;     /* Makes it less bold (400 = normal, 700 = full bold) */
-  margin-bottom: 20px;  /* Adds space below the heading */
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
-
-/* MY BIG PROFILE PICTURE IN HOME */
+/* Main Profile Photo */
 .main-photo {
-  display: block; /* Makes the image act like a block so text goes around it */
-  margin: 35px 0 350px 0; /* Adds pixels around the image */
-  width: 400px; /* Set the width of profile image (scales height too) */
-  border-radius: 0; /* Set corner roundness (currently square and sharp) */
-  object-fit: cover; /* If you zoom in and zoom out, the image image crops evenly instead of stretching or squishing */ 
+  display: block;
+  margin: 35px 0 50px 0;
+  width: 400px;
+  border-radius: 0;
+  object-fit: cover;
 }
 
-
-
-/* BOTTOM NAVIGATION BAR ONLY BAR */
+/* ---------------------- BOTTOM NAVIGATION ---------------------- */
 .bottom-nav {
-  display: flex; /* All link tabs aligned in a row */
-  justify-content: space-around; /* Spacing between each link tab is equal */
-  align-items: center; /* Center link tabs vertically in bar */
-  border-top: 1px solid #ccc; /* Showcase a thin line above navigation bar */
-  background-color: white; /* Set background color */
-  padding: 22px 0; /* Set height of navigation bar 22px for the top/bottom nad zero for the left/right */
-  position: fixed; /* Bar stays at the bottom even shen scrolling and zooming */
-  bottom: 0; /* Bar sticks to the bottom of the browser at all times */
-  width: 100%; /* Bar stretches the full width of the browser span */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  background-color: white;
+  padding: 22px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-
-
-/* BOTTOM NAVIGATION LINKS ONLY THE WORDS*/
 .bottom-nav a {
-  text-decoration: none; /* No underline under tab links */
-  font-family: 'Helvetica Neue'; /* Set all text fonts */
-  color: #333; /* Set text color */
-  font-weight: 400; /* Set boldness */
-  transition: color 0.3s ease; /* Change text color when cursor hovered */
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+  transition: color 0.3s ease;
 }
 
 .bottom-nav a:hover {
-  color: #192E4A; /* Text turns different color when cursor is hovered */
-}
-
-
-
-/* SMOOTH SCROLLING */
-html {
-  scroll-behavior: smooth; /* Scrolling between link tabs is slowed instead of instantatious */
+  color: #192E4A;
 }
