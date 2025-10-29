@@ -13,7 +13,7 @@ body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   color: #333;
-  background-color: #FCFCFC;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -21,7 +21,8 @@ body {
 
 /* Global text spacing */
 h1, h2, h3 {
-  font-weight: 500;
+  font-size: 16pt;
+  font-weight: 600;
   margin-bottom: 15px;
 }
 
@@ -31,14 +32,14 @@ p {
   font-weight: 400;
 }
 
-/* ---------------------- TOP NAVIGATION BAR ---------------------- */
+/* ---------------------- TOP BAR ---------------------- */
 .top-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  border-bottom: 1px solid #ccc;
-  background-color: white;
+  border-bottom: 1px solid #cecece;
+  background-color: rgb(255, 255, 255);
   position: fixed;
   top: 0;
   width: 100%;
@@ -81,7 +82,7 @@ p {
   color: white;
 }
 
-/* ---------------------- MAIN CONTENT ---------------------- */
+/* ---------------------- HOME PAGE ---------------------- */
 main {
   flex: 1;
   padding-top: 100px;
@@ -89,12 +90,6 @@ main {
   padding-right: 50px;
   padding-bottom: 100px;
   text-align: left;
-}
-
-/* Home Heading */
-.home h1 {
-  font-size: 20px;
-  margin-bottom: 20px;
 }
 
 /* Main Profile Photo */
@@ -106,13 +101,120 @@ main {
   object-fit: cover;
 }
 
-/* ---------------------- BOTTOM NAVIGATION ---------------------- */
+.mario {
+  display: block;
+  margin: 35px 0 50px 0;
+  width: 400px;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.franbealor {
+  display: block;
+  margin: 35px 0 50px 0;
+  width: 400px;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.fssa {
+  display: block;
+  margin: 35px 0 50px 0;
+  width: 400px;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.group {
+  display: block;
+  margin: 35px 0 50px 0;
+  width: 400px;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+/* ---------------------- STUDIOWORK ---------------------- */
+
+/* Images of my artwork */
+.roman {
+  display: block;
+  margin: 35px 0 50px 0;
+  width: 400px;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.lotus {
+  display: block;
+  margin: 35px 0 50px 0;
+  width: 400px;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.dakota {
+  display: block;
+  margin: 35px 0 50px 0;
+  width: 400px;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.neck {
+  display: block;
+  margin: 35px 0 50px 0;
+  width: 400px;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.diamond {
+  display: block;
+  margin: 35px 0 50px 0;
+  width: 400px;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.hand {
+  display: block;
+  margin: 35px 0 50px 0;
+  width: 400px;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.drape {
+  display: block;
+  margin: 35px 0 50px 0;
+  width: 400px;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.icarus {
+  display: block;
+  margin: 35px 0 50px 0;
+  width: 400px;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.mountain {
+  display: block;
+  margin: 35px 0 50px 0;
+  width: 400px;
+  border-radius: 0;
+  object-fit: cover;
+}
+
+/* ---------------------- BOTTOM BAR ---------------------- */
 .bottom-nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-top: 1px solid #ccc;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 22px 0;
   position: fixed;
   bottom: 0;
