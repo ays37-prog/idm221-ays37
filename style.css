@@ -1,4 +1,16 @@
-/* ---------------------- NORMALIZE BASE STYLES ---------------------- */
+/* ---------------------- BASE STYLES ---------------------- */
+
+/* 1) Primary (WOFF2) -> 2) WOFF -> 3) TTF fallback */
+@font-face {
+  font-family: "CustomFont";
+  src: url("Font/analogy.woff2") format("woff2"),
+       url("Font/analogy.woff") format("woff"),
+       url("Font/analogy.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,17 +31,71 @@ body {
   min-height: 100vh;
 }
 
-/* Global text spacing */
-h1, h2, h3 {
-  font-size: 16pt;
+/* GRADIENT TITLES */
+h5 {
+  font-family: "CustomFont", "Helvetica Neue", Arial, sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 90px;
+  color: #ffffff;
+  position: absolute;
+  top: 20%
+}
+
+
+/* Bold Headers */
+h1 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 15px;
 }
 
+/* Mini Bolded Headers for Resume Tab Only */
+h2 {
+  font-size: 16px;      
+  font-weight: 00;     
+  line-height: 1.6; 
+  margin-top: 20px;    
+  margin-bottom: 20x;
+}
+
+/* Resume paragraphs with smaller margins */
+h3 {
+  font-size: 16px;      
+  font-weight: 400;    
+  line-height: 1.6;   
+  margin: 0;
+}
+
+/* Resume ITALICIZED paragraphs */
+h4 {
+  font-size: 16px;      
+  font-weight: 300;   
+  font-style: italic;   
+  line-height: 1.6;   
+  margin: 0;
+}
+
 p {
   line-height: 1.6;
-  margin-bottom: 20px;
   font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/* LISTS */
+ul {
+  padding-left: 20px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #9e9d9d;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 /* ---------------------- TOP BAR ---------------------- */
@@ -61,13 +127,15 @@ p {
 }
 
 .logo {
+  font-family: "CustomFont", "Helvetica Neue", Arial, sans-serif;
   text-decoration: none;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 35px;
   color: #333;
 }
 
 /* Contact Button */
+
 .contact-button {
   border: 1px solid #333;
   padding: 7px 14px;
@@ -92,117 +160,32 @@ main {
   text-align: left;
 }
 
-/* Main Profile Photo */
-.main-photo {
+.main-photo, .mario, .franbealor, .fssa, .group {
   display: block;
-  margin: 35px 0 50px 0;
+  margin: 40px 0 15px 0;
   width: 400px;
   border-radius: 0;
   object-fit: cover;
 }
 
-.mario {
+.gradienthome, .gradientstudio, .gradientcontact, .gradientprojects {
   display: block;
-  margin: 35px 0 50px 0;
-  width: 400px;
-  border-radius: 0;
+  margin: 0;
+  width: 100vw;
+  height: auto;
   object-fit: cover;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -100px; /* cancels out main's padding-top */
 }
 
-.franbealor {
-  display: block;
-  margin: 35px 0 50px 0;
-  width: 400px;
-  border-radius: 0;
-  object-fit: cover;
-}
+/* ---------------------- STUDIO ---------------------- */
 
-.fssa {
+/* Artwork */
+.roman, .lotus, .dakota, .neck, .diamond, .hand, .drape, .icarus, .mountain {
   display: block;
-  margin: 35px 0 50px 0;
-  width: 400px;
-  border-radius: 0;
-  object-fit: cover;
-}
-
-.group {
-  display: block;
-  margin: 35px 0 50px 0;
-  width: 400px;
-  border-radius: 0;
-  object-fit: cover;
-}
-
-/* ---------------------- STUDIOWORK ---------------------- */
-
-/* Images of my artwork */
-.roman {
-  display: block;
-  margin: 35px 0 50px 0;
-  width: 400px;
-  border-radius: 0;
-  object-fit: cover;
-}
-
-.lotus {
-  display: block;
-  margin: 35px 0 50px 0;
-  width: 400px;
-  border-radius: 0;
-  object-fit: cover;
-}
-
-.dakota {
-  display: block;
-  margin: 35px 0 50px 0;
-  width: 400px;
-  border-radius: 0;
-  object-fit: cover;
-}
-
-.neck {
-  display: block;
-  margin: 35px 0 50px 0;
-  width: 400px;
-  border-radius: 0;
-  object-fit: cover;
-}
-
-.diamond {
-  display: block;
-  margin: 35px 0 50px 0;
-  width: 400px;
-  border-radius: 0;
-  object-fit: cover;
-}
-
-.hand {
-  display: block;
-  margin: 35px 0 50px 0;
-  width: 400px;
-  border-radius: 0;
-  object-fit: cover;
-}
-
-.drape {
-  display: block;
-  margin: 35px 0 50px 0;
-  width: 400px;
-  border-radius: 0;
-  object-fit: cover;
-}
-
-.icarus {
-  display: block;
-  margin: 35px 0 50px 0;
-  width: 400px;
-  border-radius: 0;
-  object-fit: cover;
-}
-
-.mountain {
-  display: block;
-  margin: 35px 0 50px 0;
+  margin: 40px 0 15px 0;
   width: 400px;
   border-radius: 0;
   object-fit: cover;
@@ -231,3 +214,4 @@ main {
 .bottom-nav a:hover {
   color: #192E4A;
 }
+
