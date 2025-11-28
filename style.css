@@ -2,10 +2,19 @@
 
 /* 1) Primary (WOFF2) -> 2) WOFF -> 3) TTF fallback */
 @font-face {
-  font-family: "CustomFont";
+  font-family: "Analogy";
   src: url("Font/analogy.woff2") format("woff2"),
        url("Font/analogy.woff") format("woff"),
        url("Font/analogy.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Paperus";
+  src: url("Font2/paperus.regular.woff") format("woff2"),
+       url("Font2/paperus.regular.woff2") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -32,26 +41,16 @@ body {
 }
 
 /* GRADIENT TITLES */
-h5 {
-  font-family: "CustomFont", "Helvetica Neue", Arial, sans-serif;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 90px;
-  color: #ffffff;
-  position: absolute;
-  top: 20%
-}
 
-
-/* Bold Headers */
+/* Custom Paperus font big words */
 h1 {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+  font-family: "Paperus", Arial, sans-serif;
+  font-size: 35px;
+  font-weight: 300;
   margin-bottom: 15px;
 }
 
-/* Mini Bolded Headers for Resume Tab Only */
+/* Bolded Headers Arial */
 h2 {
   font-size: 16px;      
   font-weight: 00;     
@@ -77,6 +76,7 @@ h4 {
   margin: 0;
 }
 
+/* regular text arial normal */
 p {
   line-height: 1.6;
   font-weight: 400;
@@ -103,7 +103,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 20px 20px;
   border-bottom: 1px solid #cecece;
   background-color: rgb(255, 255, 255);
   position: fixed;
@@ -127,17 +127,17 @@ ul {
 }
 
 .logo {
-  font-family: "CustomFont", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Paperus", "Helvetica Neue", Arial, sans-serif;
   text-decoration: none;
   font-weight: 400;
-  font-size: 35px;
-  color: #333;
+  font-size: 25px;
+  color: #000000;
 }
 
 /* Contact Button */
 
 .contact-button {
-  border: 1px solid #333;
+  border: 2px solid #000000;
   padding: 7px 14px;
   border-radius: 0;
   text-decoration: none;
@@ -146,7 +146,7 @@ ul {
 }
 
 .contact-button:hover {
-  background-color: #192E4A;
+  background-color: #2f3347;
   color: white;
 }
 
@@ -162,13 +162,13 @@ main {
 
 .main-photo, .mario, .franbealor, .fssa, .group {
   display: block;
-  margin: 40px 0 15px 0;
+  margin: 40px 0 40px 0;
   width: 400px;
   border-radius: 0;
   object-fit: cover;
 }
 
-.gradienthome, .gradientstudio, .gradientcontact, .gradientprojects {
+.gradienthome, .gradientstudio, .gradientcontact, .gradientprojects, .gradientresume {
   display: block;
   margin: 0;
   width: 100vw;
@@ -177,7 +177,7 @@ main {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  top: -100px; /* cancels out main's padding-top */
+  top: -70px; /* cancels out main's padding-top */
 }
 
 /* ---------------------- STUDIO ---------------------- */
@@ -185,11 +185,30 @@ main {
 /* Artwork */
 .roman, .lotus, .dakota, .neck, .diamond, .hand, .drape, .icarus, .mountain {
   display: block;
-  margin: 40px 0 15px 0;
+  margin: 40px 0 40px 0;
   width: 400px;
   border-radius: 0;
   object-fit: cover;
 }
+
+/* ---------------------- CONTACT ---------------------- */
+
+.linkedin-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid black;    
+  border-radius: 0;            
+  font-weight: normal;        
+  text-decoration: none;      
+  color: black;
+  transition: all 0.5s ease;
+}
+
+.linkedin-button:hover {
+  background-color: #363853; /* darker blue on hover */
+  color: white;
+}
+
 
 /* ---------------------- BOTTOM BAR ---------------------- */
 .bottom-nav {
@@ -210,8 +229,3 @@ main {
   font-weight: 400;
   transition: color 0.3s ease;
 }
-
-.bottom-nav a:hover {
-  color: #192E4A;
-}
-
