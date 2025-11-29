@@ -1,11 +1,9 @@
-/* ---------------------- BASE STYLES ---------------------- */
+/* CUSTOM FONT FACE DECLARATION  */
 
-/* 1) Primary (WOFF2) -> 2) WOFF -> 3) TTF fallback */
 @font-face {
-  font-family: "Analogy";
-  src: url("Font/analogy.woff2") format("woff2"),
-       url("Font/analogy.woff") format("woff"),
-       url("Font/analogy.ttf") format("truetype");
+  font-family: "Bebas";
+  src: url("Bebasfont/bebas-neue.regular.woff") format("woff2"),
+       url("Bebasfont/bebas-neue.regular.woff2") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -20,6 +18,7 @@
   font-display: swap;
 }
 
+/* BROWSER ADJUSTMENTS */
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +29,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* REGULAR ARIAL TEXT */
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
@@ -40,17 +40,15 @@ body {
   min-height: 100vh;
 }
 
-/* GRADIENT TITLES */
-
-/* Custom Paperus font big words */
+/* CUSTOM BEBAS FONT */
 h1 {
-  font-family: "Paperus", Arial, sans-serif;
+  font-family: "Bebas", Arial, sans-serif;
   font-size: 35px;
   font-weight: 300;
   margin-bottom: 15px;
 }
 
-/* Bolded Headers Arial */
+/* BOLDED ARIAL HEADERS */
 h2 {
   font-size: 16px;      
   font-weight: 00;     
@@ -59,7 +57,7 @@ h2 {
   margin-bottom: 20x;
 }
 
-/* Resume paragraphs with smaller margins */
+/* SMALL MARGIN REGULAR ARIAL TEXT */
 h3 {
   font-size: 16px;      
   font-weight: 400;    
@@ -67,7 +65,7 @@ h3 {
   margin: 0;
 }
 
-/* Resume ITALICIZED paragraphs */
+/* THIN ITALICIZED ARIAL TEXT */
 h4 {
   font-size: 16px;      
   font-weight: 300;   
@@ -76,20 +74,21 @@ h4 {
   margin: 0;
 }
 
-/* regular text arial normal */
+/* REGULAR NORMAL ARIAL TEXT */
 p {
   line-height: 1.6;
   font-weight: 400;
   margin-bottom: 20px;
 }
 
-/* LISTS */
+/* BULLETED ARIAL TEXTIN LISTS */
 ul {
   padding-left: 20px;
   line-height: 1.6;
   margin: 0;
 }
 
+/* DIVIDER LINE SEPARATOR */
 .divider {
   border: none;
   border-top: 1px solid #9e9d9d;
@@ -98,7 +97,7 @@ ul {
   width: 100%;
 }
 
-/* ---------------------- TOP BAR ---------------------- */
+/* TOP BAR  */
 .top-nav {
   display: flex;
   justify-content: space-between;
@@ -134,10 +133,10 @@ ul {
   color: #000000;
 }
 
-/* Contact Button */
+/* CONTACT BUTTON */
 
 .contact-button {
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   padding: 7px 14px;
   border-radius: 0;
   text-decoration: none;
@@ -150,7 +149,7 @@ ul {
   color: white;
 }
 
-/* ---------------------- HOME PAGE ---------------------- */
+/* BROWSER FORMATTING AND PADDING */
 main {
   flex: 1;
   padding-top: 100px;
@@ -160,14 +159,7 @@ main {
   text-align: left;
 }
 
-.main-photo, .mario, .franbealor, .fssa, .group {
-  display: block;
-  margin: 40px 0 40px 0;
-  width: 400px;
-  border-radius: 0;
-  object-fit: cover;
-}
-
+/* GRADIENT PAGE BACKGROUNDS */
 .gradienthome, .gradientstudio, .gradientcontact, .gradientprojects, .gradientresume {
   display: block;
   margin: 0;
@@ -180,10 +172,12 @@ main {
   top: -70px; /* cancels out main's padding-top */
 }
 
-/* ---------------------- STUDIO ---------------------- */
-
-/* Artwork */
-.roman, .lotus, .dakota, .neck, .diamond, .hand, .drape, .icarus, .mountain {
+/* REGULAR IMAGES */
+.roman, .lotus, .dakota, .neck, .diamond, .hand, 
+.drape, .icarus, .mountain, .main-photo, .mario, .franbealor, 
+.fssa, .group, .Etsy, .Reviews, 
+.Medic, .NewMedic, .KPI, .Stakeholder, .User, .Empathy, .Mike
+{
   display: block;
   margin: 40px 0 40px 0;
   width: 400px;
@@ -191,12 +185,12 @@ main {
   object-fit: cover;
 }
 
-/* ---------------------- CONTACT ---------------------- */
+/* LINKED IN BUTTON */
 
 .linkedin-button {
   display: inline-block;
   padding: 10px 20px;
-  border: 2px solid black;    
+  border: 1px solid black;    
   border-radius: 0;            
   font-weight: normal;        
   text-decoration: none;      
@@ -210,7 +204,7 @@ main {
 }
 
 
-/* ---------------------- BOTTOM BAR ---------------------- */
+/* BOTTOM BAR  */
 .bottom-nav {
   display: flex;
   justify-content: space-around;
