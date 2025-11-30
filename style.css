@@ -186,6 +186,16 @@ main {
   object-fit: cover;
 }
 
+/* CHICKEN VIDEO */
+.ChickenVideo
+{
+  max-width: 400px;   
+  width: 100%;        
+  margin: 40px 0 40px 0;
+  border-radius: 20px;  
+
+}
+
 /* LINKED IN BUTTON */
 
 .linkedin-button {
