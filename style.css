@@ -11,8 +11,8 @@
 
 @font-face {
   font-family: "Paperus";
-  src: url("Font2/paperus.regular.woff") format("woff2"),
-       url("Font2/paperus.regular.woff2") format("woff");
+  src: url("Paperusfont/paperus.regular.woff") format("woff2"),
+       url("Paperusfont/paperus.regular.woff2") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -43,9 +43,10 @@ body {
 /* CUSTOM BEBAS FONT */
 h1 {
   font-family: "Bebas", Arial, sans-serif;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 300;
   margin-bottom: 15px;
+  color: #29409a;
 }
 
 /* BOLDED ARIAL HEADERS */
@@ -54,7 +55,7 @@ h2 {
   font-weight: 00;     
   line-height: 1.6; 
   margin-top: 20px;    
-  margin-bottom: 20x;
+  margin-bottom: 62x;
 }
 
 /* SMALL MARGIN REGULAR ARIAL TEXT */
@@ -130,7 +131,7 @@ ul {
   text-decoration: none;
   font-weight: 400;
   font-size: 25px;
-  color: #000000;
+  color: #2e3c76;
 }
 
 /* CONTACT BUTTON */
