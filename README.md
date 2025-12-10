@@ -18,4 +18,4 @@ This interface was designed for small screens only and has components of my stud
 - Github to save all versions, track history, and publically host. 
 
 ## How to View 
-Open 'index.html' in a browser, or visit my live site here: 
+Open 'index.html' in a browser, or visit my live site here: ameliasuchanekportfolio.netlify.app
