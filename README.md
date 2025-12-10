@@ -1,24 +1,21 @@
-# My Portfolio Project
+# IDM-221 Amelia Suchanek's Portfolio Project
 
-This is my personal portfolio website, designed in Figma and coded with HTML, CSS, and JavaScript.
-This portfolio showcases my artistic and UX/UI capabilities. 
-It is designed for small screens and showcases my background, studiowork, resume, and my UX projects.
+This is my personal portfolio website, designed in Figma and coded with HTML and CSS. The context in this portfolio displays my background in design and showcases my artistic and UX capabilities. 
+
+This interface was designed for small screens only and has components of my studiowork, resume, contact information, and my UX projects.
 
 ## Features
-- Home page with an introduction and my background 
-- Contact page with the necessary information to contact me
-- Studio work page that showcasess my favorite pieces of art I made in highschool 
-- Resume Page that showcases my work experience and accomplishments 
-- Projects page which shows my entrepreneurial endeavors and UX/UI case studies
+- Home page with an introduction to who I am and my background in the arts and how I came to be where I am today.
+- Contact page with the necessary information to communicate with me
+- Studiowork page that showcasess my favorite pieces of art I made in highschool, refecting my strong capabilities in art and design
+- Resume Page that showcases my work experience and accomplishments that gave me valuable hard and soft skills, ideal for employers.
+- Projects page which shows my entrepreneurial endeavors and UX/UI case studies to see how I go about problem solving and creation.
 
-## Tools Used
-- Figma for creating the wireframes and providing a guiding structure that acts as a blueprint for me to follow
-- VS Code where I bring the wireframe to life in a browser
-- Code languages used: HTML and CSS
-- Github to push changes up publically and track all version history.
+## Tools and Technologies Used
+- Figma for creating the initial wireframes and providing a guiding structure to look back to. 
+- VS Code where I build the site
+- Code languages used: HTML and CSS for inserting content and sylizing it
+- Github to save all versions, track history, and publically host. 
 
 ## How to View 
-Open 'index.html' in a browser, or visit my live site here: (https://Idm221-ays-37prog.github.io/portfolio)
-
-## Images
-My images 
+Open 'index.html' in a browser, or visit my live site here: 
