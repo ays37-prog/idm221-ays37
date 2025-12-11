@@ -93,7 +93,7 @@ ul {
   width: 100%;
 }
 
-/* TOP BAR  */
+/* TOP BAR ALIGNMENT */
 .top-nav {
   display: flex;
   justify-content: space-between;
@@ -207,7 +207,7 @@ main {
 }
 
 
-/* BOTTOM BAR  */
+/* BOTTOM BAR ALIGNMENT */
 .bottom-nav {
   display: flex;
   justify-content: space-around;
